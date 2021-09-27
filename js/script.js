@@ -23,9 +23,18 @@ function handleData(artpiece) {
   superheroes.forEach((piece) => {
     // console.log(piece);
     // Create template
+
     // Grab
+    const template = document.querySelector("template").content;
     // Clone
+    const clone = template.cloneNode(true);
     // Populate
+
+    clone.querySelector(".artimg").src = artpiece.img_url;
+
     // Append
+
+    const parent = document.querySelector("main");
+    parent.appendChild(clone);
   });
 }
