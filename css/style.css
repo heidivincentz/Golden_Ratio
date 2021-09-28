@@ -45,6 +45,9 @@
   background-image: url(../assets/434_Albert_Metz\ 1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  top: -5vw;
+  z-index: -1;
 }
 
 .aside {
@@ -73,7 +76,7 @@
   font-size: 96px;
   line-height: 92px;
   color: red;
-  
+
 }
 
 
