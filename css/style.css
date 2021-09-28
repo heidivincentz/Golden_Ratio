@@ -39,21 +39,26 @@
 .backgroundimg {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100vw;
   border-radius: 0px;
   background-image: url(../assets/434_Albert_Metz\ 1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  top: -5vw;
+  z-index: -1;
+
+
 }
 
 .aside {
   border: red solid 2px;
   position: relative;
-  height: 174px;
-  width: 50.4vw;
-  left: 680px;
-  top: 461px;
+  width: 50vw;
+  height: 20vh;
+  top: 32.7vw;
+  left: 47.5vw;
   z-index: 1;
   background-color: white;
 }
@@ -62,21 +67,48 @@
   padding: 0;
   margin: 0;
   position: fixed;
-  width: 795px;
-  height: 116px;
-  left: 323px;
-  top: 332px;
+  z-index: 2;
   text-align: center;
   font-family: Gotham;
   font-style: normal;
   font-weight: bold;
-  font-size: 96px;
-  line-height: 92px;
+  font-size: 8vw;
+
   color: red;
-  
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 
+.whitearrow img {
+  position: relative;
+  bottom: -25vw;
+  left: 10vw;
+  width: 5vw;
+  transform: rotate(90deg);
+}
+
+.imgforgrid {
+  max-width: 50vw;
+  max-height: 50vw;
+
+}
+
+.imggrid {
+
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  row-gap: 20vw;
+  column-gap: 10vw;
+
+}
 
 
 
@@ -101,5 +133,18 @@
 
   .topnav input[type="text"] {
     border: 1px solid #ccc;
+  }
+
+  .aside {
+    background-color: yellow;
+    width: 30vw;
+    height: 9vw;
+    left: 63vw;
+  }
+
+  .headline {
+    font-size: 10vw;
+    top: 30%;
+
   }
 }
