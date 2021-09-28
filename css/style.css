@@ -36,11 +36,58 @@
   border: none;
 }
 
+.backgroundimg {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-width: 100vw;
+  border-radius: 0px;
+  background-image: url(../assets/434_Albert_Metz\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aside {
+  border: red solid 2px;
+  position: relative;
+  height: 174px;
+  width: 50.4vw;
+  left: 680px;
+  top: 461px;
+  z-index: 1;
+  background-color: white;
+}
+
+.headline {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 795px;
+  height: 116px;
+  left: 323px;
+  top: 332px;
+  text-align: center;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 92px;
+  color: white;
+  
+}
+
+
+
+
+
+
+
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
   }
+
   .topnav a,
   .topnav input[type="text"],
   .topnav .search-container button {
@@ -51,6 +98,7 @@
     margin: 0;
     padding: 14px;
   }
+
   .topnav input[type="text"] {
     border: 1px solid #ccc;
   }
