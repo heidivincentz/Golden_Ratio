@@ -43,7 +43,7 @@
   max-height: 35rem;
   display: flex;
   overflow-x: auto;
-  margin-left: 7vw;
+  margin-left: 9vw;
   margin-right: 7vw;
 }
 
@@ -72,7 +72,19 @@
 
   color: white;
   font-size: 35px;
-  text-decoration: underline;
+  text-decoration: underline white;
+}
+
+.item p:hover {
+  text-decoration: underline black;
+  color: black;
+  font-size: 38px;
+  transition: 0.7s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
 }
 
 .backgroundimg {
@@ -87,8 +99,6 @@
   position: relative;
   top: -5vw;
   z-index: -1;
-
-
 }
 /* asidebox with description  */
 .aside {
@@ -116,7 +126,6 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 /* arrow on top of backgroundimg */
@@ -139,18 +148,13 @@
   justify-self: center;
   row-gap: 20vw;
   column-gap: 10vw;
-
 }
 
 /*  images inside grid */
 .imgforgrid {
   max-width: 50vw;
   max-height: 50vw;
-
 }
-
-
-
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
@@ -172,18 +176,16 @@
   .topnav input[type="text"] {
     border: 1px solid #ccc;
   }
-/* asidebox with description  */
+  /* asidebox with description  */
   .aside {
     background-color: yellow;
     width: 30vw;
     height: 9vw;
     left: 63vw;
   }
-/* centered headline on top of background img */
+  /* centered headline on top of background img */
   .headline {
     font-size: 10vw;
     top: 30%;
-
   }
 }
-
