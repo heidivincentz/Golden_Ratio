@@ -36,6 +36,32 @@
   border: none;
 }
 
+/* CARDS */
+
+.wrapper {
+  max-height: 30rem;
+  display: flex;
+  overflow-x: auto;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper .item {
+  min-width: 20rem;
+  height: 30rem;
+  line-height: 15rem;
+  text-align: center;
+  margin-right: 7px;
+}
+
+.item {
+  padding-right: 10rem;
+}
+
 .backgroundimg {
   margin: 0;
   padding: 0;
@@ -73,14 +99,7 @@
   font-size: 96px;
   line-height: 92px;
   color: red;
-  
 }
-
-
-
-
-
-
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
