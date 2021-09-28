@@ -81,7 +81,7 @@ a {
   max-height: 35rem;
   display: flex;
   overflow-x: auto;
-  margin-left: 7vw;
+  margin-left: 9vw;
   margin-right: 7vw;
 }
 
@@ -110,7 +110,19 @@ a {
 
   color: white;
   font-size: 35px;
-  text-decoration: underline;
+  text-decoration: underline white;
+}
+
+.item p:hover {
+  text-decoration: underline black;
+  color: black;
+  font-size: 38px;
+  transition: 0.7s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
 }
 
 /* artist search */
