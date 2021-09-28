@@ -1,19 +1,23 @@
 @font-face {
-  src: url(fonts/AkkuratPro-Regular.otf);
-  font-family: akk;
+  src: url("../fonts/AkkuratPro-Regular.otf");
+  font-family: "akk";
 }
 @font-face {
-  src: url(fonts/Gotham-Bold.otf);
-  font-family: gotham-bold;
+  src: url("../fonts/Gotham-Bold.otf");
+  font-family: "gotham-bold";
 }
 @font-face {
-  src: url(fonts/GothamBook.ttf);
-  font-family: gotham-light;
+  src: url("../fonts/GothamBook.ttf");
+  font-family: "gotham-light";
 }
 
 :root {
   --dark-color: rgba(33, 33, 33, 1);
   --light-color: rgba(196, 196, 196, 1);
+}
+
+* {
+  font-family: akk;
 }
 
 body {
@@ -26,7 +30,10 @@ main {
 
 a {
   text-decoration: none;
-  font-style: akk;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Style the navbar */
@@ -67,15 +74,66 @@ a {
   border: none;
 }
 
+/* artist search */
+
+#search-box {
+  width: max-content;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+#search-box input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+#alphabet-grid button {
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+/* footer styling */
 footer {
   background-color: var(--dark-color);
   margin: 0;
   display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+footer ul {
+  list-style: none;
 }
 
-#left-side a {
-  color: white;
+.some {
+  font-size: 0.6rem;
+  line-height: 1rem;
 }
+
+#contact {
+  margin-left: 2.6rem;
+}
+
+.links {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+#copyright {
+  color: white;
+  font-size: 0.6rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* end footer  */
 
 .backgroundimg {
   margin: 0;
