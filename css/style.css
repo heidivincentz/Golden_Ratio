@@ -1,3 +1,41 @@
+@font-face {
+  src: url("../fonts/AkkuratPro-Regular.otf");
+  font-family: "akk";
+}
+@font-face {
+  src: url("../fonts/Gotham-Bold.otf");
+  font-family: "gotham-bold";
+}
+@font-face {
+  src: url("../fonts/GothamBook.ttf");
+  font-family: "gotham-light";
+}
+
+:root {
+  --dark-color: rgba(33, 33, 33, 1);
+  --light-color: rgba(196, 196, 196, 1);
+}
+
+* {
+  font-family: akk;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Style the navbar */
 .topnav {
   overflow: hidden;
@@ -63,6 +101,67 @@
   padding-right: 10rem;
 }
 
+/* artist search */
+
+#search-box {
+  width: max-content;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+#search-box input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+#alphabet-grid button {
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+/* footer styling */
+footer {
+  background-color: var(--dark-color);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+footer ul {
+  list-style: none;
+}
+
+.some {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+
+#contact {
+  margin-left: 2.6rem;
+}
+
+.links {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+#copyright {
+  color: white;
+  font-size: 0.6rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* end footer  */
+
 .backgroundimg {
   margin: 0;
   padding: 0;
@@ -75,8 +174,6 @@
   position: relative;
   top: -5vw;
   z-index: -1;
-
-
 }
 /* asidebox with description  */
 .aside {
@@ -104,7 +201,6 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 /* arrow on top of backgroundimg */
@@ -127,18 +223,13 @@
   justify-self: center;
   row-gap: 20vw;
   column-gap: 10vw;
-
 }
 
 /*  images inside grid */
 .imgforgrid {
   max-width: 50vw;
   max-height: 50vw;
-
 }
-
-
-
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
@@ -160,18 +251,16 @@
   .topnav input[type="text"] {
     border: 1px solid #ccc;
   }
-/* asidebox with description  */
+  /* asidebox with description  */
   .aside {
     background-color: yellow;
     width: 30vw;
     height: 9vw;
     left: 63vw;
   }
-/* centered headline on top of background img */
+  /* centered headline on top of background img */
   .headline {
     font-size: 10vw;
     top: 30%;
-
   }
 }
-

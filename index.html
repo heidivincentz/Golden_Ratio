@@ -27,86 +27,100 @@
 
   </nav>
 
-  
+
   <section>
     <div class="wrapper">
-         <div class="item"> <a href="artist.html"><img src="assets/giacometti.jpeg" alt="1"> </a></div>
-         <div class="item"> <a href="country.html"> <img src="assets/giacometti.jpeg" alt="2"> </a></div>
-         <div class="item"> <a href="exhibition.html">   <img src="assets/giacometti.jpeg" alt="3">> </a> </div>
-         <div class="item"> <a href="medium.html"> <img src="assets/giacometti.jpeg" alt="4">> </a> </div>
-         <div class="item"> <a href="decade.html"> <img src="assets/giacometti.jpeg" alt="4">> </a> </div>
-     
-     </div>
- </section>
+      <div class="item"> <a href="artist.html"><img src="assets/giacometti.jpeg" alt="1"> </a></div>
+      <div class="item"> <a href="country.html"> <img src="assets/giacometti.jpeg" alt="2"> </a></div>
+      <div class="item"> <a href="exhibition.html"> <img src="assets/giacometti.jpeg" alt="3">> </a> </div>
+      <div class="item"> <a href="medium.html"> <img src="assets/giacometti.jpeg" alt="4">> </a> </div>
+      <div class="item"> <a href="decade.html"> <img src="assets/giacometti.jpeg" alt="4">> </a> </div>
 
-  <section id="artist-search">
-    <div id="search-box">
-      <img src="assets/search-icon.png" alt="search-icon" />
-      <p>What are you looking for?</p>
-      <img src="assets/arrow-black.png" alt="arrow-black" />
     </div>
-    <section id="alphabet-grid">
-      <button id="a">A</button>
-      <button id="b">B</button>
-      <button id="c">C</button>
-      <button id="d">D</button>
-      <button id="e">E</button>
-      <button id="f">F</button>
-      <button id="g">G</button>
-      <button id="h">H</button>
-      <button id="i">I</button>
-      <button id="j">J</button>
-      <button id="k">K</button>
-      <button id="l">L</button>
-      <button id="m">M</button>
-      <button id="n">N</button>
-      <button id="o">O</button>
-      <button id="p">P</button>
-      <button id="q">Q</button>
-      <button id="r">R</button>
-      <button id="s">S</button>
-      <button id="t">T</button>
-      <button id="u">U</button>
-      <button id="v">V</button>
-      <button id="w">W</button>
-      <button id="x">X</button>
-      <button id="y">Y</button>
-      <button id="z">Z</button>
+  </section>
+
+  <main>
+    <section id="artist-search">
+      <div id="search-box">
+        <img src="assets/search-icon.png" alt="search-icon" width="30" height="30" />
+        <input type="text" placeholder="What are you looking for?" name="search" />
+        <img src="assets/arrow-black.png" alt="arrow-black" width="30" height="30" />
+      </div>
+      <section id="alphabet-grid">
+        <button id="a">A</button>
+        <button id="b">B</button>
+        <button id="c">C</button>
+        <button id="d">D</button>
+        <button id="e">E</button>
+        <button id="f">F</button>
+        <button id="g">G</button>
+        <button id="h">H</button>
+        <button id="i">I</button>
+        <button id="j">J</button>
+        <button id="k">K</button>
+        <button id="l">L</button>
+        <button id="m">M</button>
+        <button id="n">N</button>
+        <button id="o">O</button>
+        <button id="p">P</button>
+        <button id="q">Q</button>
+        <button id="r">R</button>
+        <button id="s">S</button>
+        <button id="t">T</button>
+        <button id="u">U</button>
+        <button id="v">V</button>
+        <button id="w">W</button>
+        <button id="x">X</button>
+        <button id="y">Y</button>
+        <button id="z">Z</button>
+      </section>
+      <section id="artist-results">
+        <div id="letter"></div>
+        <template id="name-results">
+          <a href="artist.html">
+            <p></p>
+            <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" width="20" height="20">
+          </a>
+        </template>
+      </section>
     </section>
-    <section id="artist-results">
-      <div id="letter"></div>
-      <template id="name-results">
+
+    <section id="medium-search">
+      <template id="medium-results">
         <a href="artist.html">
           <p></p>
-          <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black">
+          <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" width="20" height="20">
         </a>
       </template>
     </section>
-  </section>
 
-  <section id="medium-search">
-    <template id="medium-results">
-      <a href="artist.html">
-        <p></p>
-        <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" />
-      </a>
-    </template>
-  </section>
-
-  <section id="decade-search">
-    <div class="timeline"></div>
-    <div id="decade-grid">
-      <div class="decade-card">
-        <a href="artist.html">
-          <img src="/assets/1930s.jpg" alt="30s">
-          <p>1930-39</p>
-        </a>
-      </div>
-      <div class="decade-card">
-        <a href="artist.html">
-          <img src="/assets/1940s.jpg" alt="30s">
-          <p>1940-49</p>
-        </a>
+    <section id="decade-search">
+      <div class="timeline"></div>
+      <div id="decade-grid">
+        <div class="decade-card">
+          <a href="artist.html">
+            <img src="/assets/1930s.jpg" alt="30s">
+            <p>1930-39</p>
+          </a>
+        </div>
+        <div class="decade-card">
+          <a href="artist.html">
+            <img src="/assets/1940s.jpg" alt="30s">
+            <p>1940-49</p>
+          </a>
+        </div>
+        <div class="decade-card">
+          <a href="artist.html">
+            <img src="/assets/1950s.jpg" alt="30s">
+            <p>1950-59</p>
+          </a>
+        </div>
+        <div class="decade-card">
+          <a href="artist.html">
+            <img src="/assets/1960s.jpg" alt="30s">
+            <p>1960-69</p>
+          </a>
+        </div>
       </div>
       <div class="decade-card">
         <a href="artist.html">
@@ -120,47 +134,59 @@
           <p>1960-69</p>
         </a>
       </div>
-    </div>
-  </section>
-
-
-
-
-  <section id="country-search">
-    <img src="/assets/globe-world-map-dot-distribution-map-class-cc730fa542f940f7e640ecbe8de0e88a.png" alt="world-map">
-    <ul id="country-ul">
-      <template id="country-list">
-        <li><a href="artist.html">Artists</a></li>
-      </template>
-    </ul>
-  </section>
-
-  <main>
-  <template>
-    <section class="imgcard">
-      <img src="" alt="" class="artimg" />
+      </div>
     </section>
 
-  
-      <h1 class="listh1">  </h1>
+
+
+
+    <section id="country-search">
+      <img src="/assets/globe-world-map-dot-distribution-map-class-cc730fa542f940f7e640ecbe8de0e88a.png"
+        alt="world-map">
+      <ul id="country-ul">
+        <template id="country-list">
+          <li><a href="artist.html">Artists</a></li>
+        </template>
+      </ul>
+    </section>
+
+    <section id="country-search">
+      <img src="/assets/globe-world-map-dot-distribution-map-class-cc730fa542f940f7e640ecbe8de0e88a.png" alt="world-map"
+        width="auto" height="600">
+      <ul id="country-ul">
+        <template id="country-list">
+          <li><a href="artist.html"></a></li>
+        </template>
+      </ul>
+    </section>
+    <template>
+      <section class="imgcard">
+        <img src="" alt="" class="artimg" />
+      </section>
+
+
+      <h1 class="listh1"> </h1>
       <h2 class="artist"></h2>
 
       <p class="country">
-         Country:
-          <span ></span>
-        </p>
-  
+        Country:
+        <span></span>
+      </p>
+
       <p class="year"></p>
       <p class="classification"></p>
       <p class="genre"></p>
-      <p class="country"></p> </template>
-</main>
+      <p class="country"></p>
+    </template>
+
+    </section>
+  </main>
 
   <footer>
-    <div id="left-side">
-      <a href="https://louisiana.dk/om-louisiana/kontakt/">Contact Us
-        <span><img src="/assets/arrow-white.png" alt="white-arrow" /></span></a>
-      <ul>
+    <div>
+      <a href="https://louisiana.dk/om-louisiana/kontakt/" id="contact">Contact Us
+        <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
+      <ul class="some">
         <li>
           <a href="https://www.facebook.com/louisianamuseum">Facebook</a>
         </li>
@@ -171,25 +197,25 @@
           <a href="https://www.youtube.com/user/LouisianaMuseum">YouTube</a>
         </li>
       </ul>
-      <ul>
+      <ul id="copyright">
         <li>Copyright Louisiana Museum of Modern Art</li>
         <li>
           <a href="https://louisiana.dk/persondata-og-cookiepolitik/">Persondata - og cookiepolitik</a>
         </li>
       </ul>
     </div>
-    <ul>
+    <ul class="links">
       <li>
         <a href="https://louisiana.dk/">Louisiana Museum Page
-          <span><img src="/assets/arrow-white.png" alt="white-arrow" /></span></a>
+          <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
       </li>
       <li>
         <a href="https://butik.louisiana.dk/">Webshop
-          <span><img src="/assets/arrow-white.png" alt="white-arrow" /></span></a>
+          <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
       </li>
       <li>
         <a href="https://channel.louisiana.dk/">Louisiana Channel
-          <span><img src="/assets/arrow-white.png" alt="white-arrow" /></span></a>
+          <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
       </li>
     </ul>
   </footer>
