@@ -34,41 +34,92 @@
       <img src="assets/arrow-black.png" alt="arrow-black" />
     </div>
     <section id="alphabet-grid">
-      <div id="a">A</div>
-      <div id="b">B</div>
-      <div id="c">C</div>
-      <div id="d">D</div>
-      <div id="e">E</div>
-      <div id="f">F</div>
-      <div id="g">G</div>
-      <div id="h">H</div>
-      <div id="i">I</div>
-      <div id="j">J</div>
-      <div id="k">K</div>
-      <div id="l">L</div>
-      <div id="m">M</div>
-      <div id="n">N</div>
-      <div id="o">O</div>
-      <div id="p">P</div>
-      <div id="q">Q</div>
-      <div id="r">R</div>
-      <div id="s">S</div>
-      <div id="t">T</div>
-      <div id="u">U</div>
-      <div id="v">V</div>
-      <div id="w">W</div>
-      <div id="x">X</div>
-      <div id="y">Y</div>
-      <div id="z">Z</div>
+      <button id="a">A</button>
+      <button id="b">B</button>
+      <button id="c">C</button>
+      <button id="d">D</button>
+      <button id="e">E</button>
+      <button id="f">F</button>
+      <button id="g">G</button>
+      <button id="h">H</button>
+      <button id="i">I</button>
+      <button id="j">J</button>
+      <button id="k">K</button>
+      <button id="l">L</button>
+      <button id="m">M</button>
+      <button id="n">N</button>
+      <button id="o">O</button>
+      <button id="p">P</button>
+      <button id="q">Q</button>
+      <button id="r">R</button>
+      <button id="s">S</button>
+      <button id="t">T</button>
+      <button id="u">U</button>
+      <button id="v">V</button>
+      <button id="w">W</button>
+      <button id="x">X</button>
+      <button id="y">Y</button>
+      <button id="z">Z</button>
     </section>
     <section id="artist-results">
       <div id="letter"></div>
       <template id="name-results">
-        <p></p>
-        <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" />
+        <a href="artist.html">
+          <p></p>
+          <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black">
+        </a>
       </template>
     </section>
   </section>
+
+  <section id="medium-search">
+    <template id="medium-results">
+      <a href="artist.html">
+        <p></p>
+        <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" />
+      </a>
+    </template>
+  </section>
+
+  <section id="decade-search">
+    <div class="timeline"></div>
+    <div id="decade-grid">
+      <div class="decade-card">
+        <a href="artist.html">
+          <img src="/assets/1930s.jpg" alt="30s">
+          <p>1930-39</p>
+        </a>
+      </div>
+      <div class="decade-card">
+        <a href="artist.html">
+          <img src="/assets/1940s.jpg" alt="30s">
+          <p>1940-49</p>
+        </a>
+      </div>
+      <div class="decade-card">
+        <a href="artist.html">
+          <img src="/assets/1950s.jpg" alt="30s">
+          <p>1950-59</p>
+        </a>
+      </div>
+      <div class="decade-card">
+        <a href="artist.html">
+          <img src="/assets/1960s.jpg" alt="30s">
+          <p>1960-69</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="country-search">
+    <img src="/assets/globe-world-map-dot-distribution-map-class-cc730fa542f940f7e640ecbe8de0e88a.png" alt="world-map">
+    <ul id="country-ul">
+      <template id="country-list">
+        <li><a href="artist.html"></a></li>
+      </template>
+    </ul>
+  </section>
+
 
   <footer>
     <div id="left-side">
