@@ -131,6 +131,8 @@ h1 {
   width: max-content;
   border-bottom: 1px solid black;
   margin-bottom: 2rem;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 #search-box input[type="text"] {
@@ -140,11 +142,37 @@ h1 {
   border: none;
 }
 
+#alphabet-grid {
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
 #alphabet-grid button {
   background-color: white;
   outline: none;
-  border: none;
+  border: 1px solid black;
+  padding: 0.8rem;
   font-size: 1.8rem;
+}
+
+.artist-link {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.arrow-right {
+  align-self: center;
+}
+
+#alphabet-grid button:hover {
+  text-decoration: underline;
 }
 
 /* footer styling */
