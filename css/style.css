@@ -35,7 +35,7 @@
   font-size: 17px;
   border: none;
 }
-
+/* backgroudimg in the top part of page */
 .backgroundimg {
   margin: 0;
   padding: 0;
@@ -51,7 +51,7 @@
 
 
 }
-
+/* asidebox with description  */
 .aside {
   border: red solid 2px;
   position: relative;
@@ -62,7 +62,7 @@
   z-index: 1;
   background-color: white;
 }
-
+/* centered headline on top of background img */
 .headline {
   padding: 0;
   margin: 0;
@@ -73,7 +73,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 8vw;
-
   color: red;
   top: 35%;
   left: 50%;
@@ -81,7 +80,7 @@
 
 }
 
-
+/* arrow on top of backgroundimg */
 .whitearrow img {
   position: relative;
   bottom: -25vw;
@@ -90,14 +89,8 @@
   transform: rotate(90deg);
 }
 
-.imgforgrid {
-  max-width: 50vw;
-  max-height: 50vw;
-
-}
-
+/* grid with the images */
 .imggrid {
-
   max-width: 100vw;
   max-height: 100vh;
   display: flex;
@@ -110,8 +103,12 @@
 
 }
 
+/*  images inside grid */
+.imgforgrid {
+  max-width: 50vw;
+  max-height: 50vw;
 
-
+}
 
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
@@ -134,14 +131,14 @@
   .topnav input[type="text"] {
     border: 1px solid #ccc;
   }
-
+/* asidebox with description  */
   .aside {
     background-color: yellow;
     width: 30vw;
     height: 9vw;
     left: 63vw;
   }
-
+/* centered headline on top of background img */
   .headline {
     font-size: 10vw;
     top: 30%;
