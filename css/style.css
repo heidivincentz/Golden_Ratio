@@ -214,6 +214,20 @@ footer a {
 
 /* end footer  */
 
+#search-dark-bg input[type="text"] {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#search-dark-bg {
+  border-bottom: 1px solid white;
+}
+
+#back-to {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
 .backgroundimg {
   margin: 0;
   padding: 0;
@@ -239,18 +253,38 @@ footer a {
   background-color: white;
 }
 /* centered headline on top of background img */
-.headline {
+#white-title {
   padding: 0;
   margin: 0;
-  position: fixed;
-  z-index: 2;
+  z-index: 20;
+  position: absolute;
+  width: max-content;
   text-align: center;
+  text-transform: uppercase;
   font-family: Gotham;
   font-style: normal;
   font-weight: bold;
   font-size: 8vw;
-  color: red;
-  top: 35%;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#black-title {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  position: fixed;
+  width: max-content;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8vw;
+  color: black;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
