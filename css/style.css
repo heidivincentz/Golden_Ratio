@@ -78,7 +78,7 @@ a {
 /* CARDS */
 
 .wrapper {
-  max-height: 30rem;
+  max-height: 35rem;
   display: flex;
   overflow-x: auto;
   margin-left: 7vw;
@@ -90,15 +90,27 @@ a {
 }
 
 .wrapper .item {
-  min-width: 20rem;
-  height: 30rem;
+  min-width: 14rem;
+  height: 35rem;
   line-height: 15rem;
   text-align: center;
-  margin-right: 7px;
+  margin-right: 5rem;
 }
 
 .item {
   padding-right: 10rem;
+  background-image: url(../assets/giacometti.jpeg);
+}
+
+.item p {
+  position: relative;
+  padding-top: 8vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+  color: white;
+  font-size: 35px;
+  text-decoration: underline;
 }
 
 /* artist search */
