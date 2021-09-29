@@ -350,3 +350,16 @@ footer a {
     top: 30%;
   }
 }
+
+/* COUNTRY PAGE */
+
+/* image scaling automatically */
+.worldmapimg {
+  height: auto;
+  max-width: 100%;
+}
+
+.worldmap {
+  display: flex;
+  align-items: center;
+}
