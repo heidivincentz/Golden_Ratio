@@ -409,6 +409,14 @@ country search page */
   text-transform: uppercase;
 }
 
+/* 
+country results page */
+
+.aside img {
+  transform: rotate(90deg);
+  margin-left: 125px;
+}
+
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav .search-container {
