@@ -387,6 +387,28 @@ country search page */
   color: red;
 }
 
+/* medium serch */
+
+.search-by h1 {
+  margin-bottom: 5%;
+}
+
+.medium-link {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.medium-type::first-letter {
+  text-transform: uppercase;
+}
+
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav .search-container {
