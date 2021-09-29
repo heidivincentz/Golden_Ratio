@@ -247,7 +247,7 @@ footer a {
   min-height: 80vh;
   max-width: 100vw;
   border-radius: 0px;
-  background-image: url(../assets/434_Albert_Metz\ 1.png);
+  background-image: ;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   background-position: center;
   background-repeat: no-repeat;
@@ -409,6 +409,64 @@ country search page */
   text-transform: uppercase;
 }
 
+/* 
+country results page */
+
+.aside img {
+  transform: rotate(90deg);
+  margin-left: 125px;
+}
+
+/* decade search page */
+
+#decade-search {
+  position: relative;
+}
+
+.timeline {
+  position: absolute;
+  left: 50%;
+  height: 200vh;
+  width: 0.2vw;
+  background-color: black;
+}
+
+.decade-card {
+  position: relative;
+  justify-self: center;
+  background-color: black;
+}
+
+#decade-grid {
+  max-width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20vw;
+  column-gap: 10vw;
+  margin-bottom: 5rem;
+}
+
+.decade-card img {
+  justify-self: center;
+  align-self: center;
+  opacity: 0.5;
+}
+
+.decade-card a {
+  color: white;
+}
+
+.decade-card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
+  font-family: akk;
+  font-size: 2rem;
+}
+
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -440,5 +498,14 @@ country search page */
   .headline {
     font-size: 10vw;
     top: 30%;
+  }
+
+  /* decade page */
+  #decade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    display: none;
   }
 }
