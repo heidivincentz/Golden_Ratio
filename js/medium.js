@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const medium = urlParams.get("medium");
-console.log("tu vieja");
+
 const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?q={"classification": "${medium}"}`;
 
 document.querySelector("#black-title").textContent = medium;
