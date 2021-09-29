@@ -22,14 +22,14 @@ function handleData(data) {
 
 function showArtists(art) {
   console.log(art);
-  const artistCard = document.querySelector("#name-results").content;
+  const artistCard = document.querySelector(".name-results").content;
   const clone = artistCard.cloneNode(true);
   clone.querySelector(".artist-name").textContent = art.artist;
   clone
     .querySelector(".artist-link")
     .setAttribute("href", "artist.html?artist=" + art.artist);
   //   clone.querySelector(".").textContent = cat.category;
-  const parent = document.querySelector("#artist-results");
+  const parent = document.querySelector(".artist-results");
   parent.appendChild(clone);
 }
 

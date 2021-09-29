@@ -362,3 +362,11 @@ footer a {
 .worldmap {
   /* display: flex; */
 }
+
+.worldnav {
+}
+
+.countries {
+  /* display: flex;
+  flex-direction: column; */
+}
