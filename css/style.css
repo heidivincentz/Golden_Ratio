@@ -130,9 +130,20 @@ h1 {
 #search-box {
   width: max-content;
   border-bottom: 1px solid black;
-  margin-bottom: 2rem;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-bottom: 4%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 35%;
+  margin-right: 35%; */
+}
+
+.search-by {
+  margin-top: 2%;
+}
+
+.search-by h1 {
+  margin-bottom: 2%;
 }
 
 #search-box input[type="text"] {
@@ -144,7 +155,7 @@ h1 {
 
 #alphabet-grid {
   margin-left: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 
 #alphabet-grid button {
@@ -306,9 +317,6 @@ footer a {
   z-index: 7;
 }
 
-.bg-img {
-}
-
 /* grid with the images */
 .imggrid {
   max-width: 100vw;
@@ -327,6 +335,56 @@ footer a {
 .imgforgrid {
   max-width: 50vw;
   max-height: 50vw;
+}
+
+/* 
+country search page */
+
+.back-button {
+  margin-top: 7%;
+  margin-left: 3%;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: black;
+}
+
+#world-map {
+  height: 100%;
+  position: relative;
+}
+
+.worldmapimg {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#country-list {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+}
+
+#country-main {
+  height: 98vh;
+  margin-top: 2%;
+}
+
+#country-list {
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.767);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.country-ul {
+  color: red;
+  text-decoration: underline;
+}
+
+.country-link {
+  color: red;
 }
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
@@ -361,16 +419,4 @@ footer a {
     font-size: 10vw;
     top: 30%;
   }
-}
-
-/* COUNTRY PAGE */
-
-/* image scaling automatically */
-.worldmapimg {
-  height: auto;
-  max-width: 100%;
-}
-
-.worldmap {
-  /* display: flex; */
 }
