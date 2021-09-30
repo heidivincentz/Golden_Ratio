@@ -1,11 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
-const medium = urlParams.get("medium");
+const classification = urlParams.get("classification");
 
-const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?q={"classification": "${medium}"}`;
+const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?q={"classification": "${classification}"}`;
 
-document.querySelector("#black-title").textContent = medium;
-document.querySelector("#white-title").textContent = medium;
-
+document.querySelector("#black-title").textContent = classification;
+document.querySelector("#white-title").textContent = classification;
+console.log("why is not working?");
 // API key
 const key = { headers: { "x-apikey": "6151ddb6dfa7346e2f9690b9" } };
 

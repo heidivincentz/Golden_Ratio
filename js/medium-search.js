@@ -27,7 +27,7 @@ function showMediums(mdm) {
   clone.querySelector(".medium-type").textContent = mdm.classification;
   clone
     .querySelector(".medium-link")
-    .setAttribute("href", "artist.html?medium=" + mdm.classification);
+    .setAttribute("href", "artist.html?classification=" + mdm.classification);
   //   clone.querySelector(".").textContent = cat.category;
   const parent = document.querySelector("#medium-results");
   parent.appendChild(clone);
