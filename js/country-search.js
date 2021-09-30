@@ -1,8 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const artist = urlParams.get("country");
 
-const url =
-  "https://keadata-ece4.restdb.io/rest/golden-ratio-database?sort=country";
+const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?sort=country&q={"$distinct": "country"}`;
 
 // API key
 const key = { headers: { "x-apikey": "6151ddb6dfa7346e2f9690b9" } };
@@ -24,10 +23,10 @@ function showCountry(country) {
   console.log(country);
   const artistCard = document.querySelector("#country-template").content;
   const clone = artistCard.cloneNode(true);
-  clone.querySelector(".country-link").textContent = country.country;
+  clone.querySelector(".country-link").textContent = country;
   clone
     .querySelector(".country-link")
-    .setAttribute("href", "country.html?country=" + country.country);
+    .setAttribute("href", "country.html?country=" + country);
   const parent = document.querySelector("#country-list");
   parent.appendChild(clone);
 }

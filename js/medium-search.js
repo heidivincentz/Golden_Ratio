@@ -1,8 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const artist = urlParams.get("classification");
 
-const url =
-  "https://keadata-ece4.restdb.io/rest/golden-ratio-database?sort=classification";
+const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?sort=classification&q={"$distinct": "classification"}`;
 
 // API key
 const key = { headers: { "x-apikey": "6151ddb6dfa7346e2f9690b9" } };
@@ -24,10 +23,10 @@ function showMediums(mdm) {
   console.log(mdm);
   const artistCard = document.querySelector("#medium-template").content;
   const clone = artistCard.cloneNode(true);
-  clone.querySelector(".medium-type").textContent = mdm.classification;
+  clone.querySelector(".medium-type").textContent = mdm;
   clone
     .querySelector(".medium-link")
-    .setAttribute("href", "artist.html?classification=" + mdm.classification);
+    .setAttribute("href", "medium.html?classification=" + mdm);
   //   clone.querySelector(".").textContent = cat.category;
   const parent = document.querySelector("#medium-results");
   parent.appendChild(clone);
