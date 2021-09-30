@@ -105,8 +105,11 @@ a {
 .item p {
   position: relative;
   padding-top: 8vw;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  margin-left: 60%;
+  /*  margin-left: 8vw;
+  margin-right: 8vw; */
+
+  align-self: center;
 
   color: white;
   font-size: 35px;
