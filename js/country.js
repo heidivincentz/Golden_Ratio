@@ -1,10 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
-const artist = urlParams.get("artist");
+const country = urlParams.get("country");
 
-const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?q={"artist": "${artist}"}`;
+const url = `https://keadata-ece4.restdb.io/rest/golden-ratio-database?q={"country": "${country}"}`;
 
-document.querySelector("#black-title").textContent = artist;
-document.querySelector("#white-title").textContent = artist;
+document.querySelector("#black-title").textContent = country;
+document.querySelector("#white-title").textContent = country;
 
 // API key
 const key = { headers: { "x-apikey": "6151ddb6dfa7346e2f9690b9" } };
@@ -24,11 +24,11 @@ function handleData(data) {
 }
 
 function showArt(pic) {
-  document.querySelector(".aside").innerHTML = pic.bio;
+  //   document.querySelector(".aside").innerHTML = pic.bio;
   document.querySelector(
     ".backgroundimg"
   ).style.backgroundImage = `url("https://neurotive.com/KEA/Golden_Ratio/louisiana_archivephotos_golden-ratio/${pic.TMSid}.jpg")`;
-  //   console.log(pic);
+  console.log(pic);
   const shCard = document.querySelector("#pic-template").content;
   const clone = shCard.cloneNode(true);
 

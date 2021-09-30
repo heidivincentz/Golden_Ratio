@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decade</title>
+    <title>Louisiana Archive</title>
     <link rel="stylesheet" href="css/style.css" />
 
     <meta name="robots" content="noindex,nofollow" />
     <script src="https://kea-alt-del.dk/2021/autumn/louisiana/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a><a href="artist.html">Artist</a
-        ><a href="country.html">Country</a
-        ><a href="exhibition.html">Exhibition</a
-        ><a href="medium.html">Medium</a>
-        <a href="decade.html">Decade</a>
-      </nav>
-    </header>
-  </body>
+</head>
+
+<body>
+
+    <nav class="topnav">
+
+        <a class="logo" href="index.html"> <img src="assets/white-logo.png" alt="Logo"> </a>
+
+        <a id="back-to" href="index.html">
+            <img src="/assets/back-white.png" alt="back-arrow" width="20" height="20">
+            Back to Categories</a>
+
+        <div class="search-container" id="search-dark-bg">
+            <input type="text" placeholder="Search.." name="search">
+            <img src="assets/white-zoom.png" alt="search icon" width="20" height="20">
+        </div>
+    </nav>
+
+    <div class="backgroundimg">
+        <h1 id="white-title"></h1>
+        <h1 id="black-title"></h1>
+        <div class="aside">
+            <img src="assets/arrow-black.png" alt="arrow">
+        </div>
+
+    </div>
+    <div class="imggrid">
+        <template id="pic-template">
+            <img class="art-img" src="" alt="" width="600">
+        </template>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://louisiana.dk/om-louisiana/kontakt/" id="contact">Contact Us
+                <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
+            <u l class="some">
+                <li>
+                    <a href="https://www.facebook.com/louisianamuseum">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/louisianamuseum/">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/LouisianaMuseum">YouTube</a>
+                </li>
+                </ul>
+                <ul id="copyright">
+                    <li>Copyright Louisiana Museum of Modern Art</li>
+                    <li>
+                        <a href="https://louisiana.dk/persondata-og-cookiepolitik/">Persondata - og cookiepolitik</a>
+                    </li>
+                </ul>
+        </div>
+        <ul class="links">
+            <li>
+                <a href="https://louisiana.dk/">Louisiana Museum Page
+                    <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
+            </li>
+            <li>
+                <a href="https://butik.louisiana.dk/">Webshop
+                    <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
+            </li>
+            <li>
+                <a href="https://channel.louisiana.dk/">Louisiana Channel
+                    <span><img src="/assets/arrow-white.png" alt="white-arrow" width="20" height="20" /></span></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="js/decade.js"></script>
+
 </html>

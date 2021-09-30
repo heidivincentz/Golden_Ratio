@@ -32,10 +32,3 @@ function showArtists(art) {
   const parent = document.querySelector("#artist-results");
   parent.appendChild(clone);
 }
-
-//   <template id="name-results">
-//   <a href="artist.html" class="artist-link">
-//       <p class="artist-name"></p>
-//       <img class="arrow-right" src="assets/arrow-black.png" alt="arrow-black" width="20" height="20">
-//   </a>
-// </template>
